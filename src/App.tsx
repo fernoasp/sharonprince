@@ -1,4 +1,4 @@
-import Header from "./components/header";
+import Header from "./components/Header";
 import Hero from "./components/Hero";
 import FocusAreas from "./components/FocusAreas";
 import Experience from "./components/Experience";
