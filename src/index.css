@@ -686,3 +686,293 @@ section {
     height: 200px;
   }
 }
+/* ================= MODAL ================= */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.modal-content {
+  background: #111;
+  border-radius: 20px;
+  max-width: 720px;
+  width: 90%;
+  padding: 32px;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---------- IMAGES ---------- */
+
+.modal-images img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.modal-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: var(--accent-color);
+}
+
+/* ---------- TEXT ---------- */
+
+.modal-text {
+  margin-top: 26px;
+}
+
+.modal-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+}
+
+.modal-text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d0d0d0;
+}
+
+/* ---------- CLICKABLE CARD ---------- */
+
+.card.clickable {
+  cursor: pointer;
+}
+
+.card.clickable:hover {
+  transform: translateY(-12px) scale(1.01);
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+  .modal-images img {
+    height: 240px;
+  }
+
+  .modal-content {
+    padding: 24px;
+  }
+}
+/* ================= EXPANDED CARD PANEL ================= */
+
+.card.clickable {
+  cursor: pointer;
+}
+
+.card.expanded {
+  transform: none;
+}
+
+/* Panel container */
+.expanded-panel {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(212, 163, 115, 0.25);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Image */
+.expanded-image {
+  width: 100%;
+  height: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.expanded-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s ease;
+}
+
+/* Text */
+.expanded-text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d8d8d8;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+  .expanded-image {
+    height: 220px;
+  }
+
+  .expanded-text p {
+    font-size: 0.9rem;
+  }
+}
+/* ================= POPUP MODAL ================= */
+
+.popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+  padding: 20px;
+}
+
+.popup-card {
+  background: #111;
+  max-width: 720px;
+  width: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+  animation: fadeIn 0.4s ease;
+  position: relative;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* IMAGE */
+.popup-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.popup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s ease;
+}
+
+/* CONTENT */
+.popup-content {
+  padding: 28px;
+  overflow-y: auto;
+}
+
+.popup-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+}
+
+.popup-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d8d8d8;
+}
+
+/* ---------- CLICKABLE CARD ---------- */
+.card.clickable {
+  cursor: pointer;
+}
+
+.card.clickable:hover {
+  transform: translateY(-12px) scale(1.01);
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .popup-image {
+    height: 220px;
+  }
+
+  .popup-content {
+    padding: 22px;
+  }
+}
+/* ================= SCROLL INDICATOR ================= */
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 42px;
+  border: 1px solid rgba(212, 163, 115, 0.35); /* soft gold */
+  border-radius: 20px;
+  opacity: 0.45; /* barely visible */
+  pointer-events: none;
+}
+
+.scroll-indicator span {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: scrollDot 2.4s ease-in-out infinite;
+}
+
+/* Animation */
+@keyframes scrollDot {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, 14px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 18px);
+  }
+}
+
+/* Hide on mobile (optional, cleaner) */
+@media (max-width: 768px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
