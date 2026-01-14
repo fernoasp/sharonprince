@@ -4,6 +4,7 @@ import FocusAreas from "./components/FocusAreas";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import Milestones from "./components/Milestones";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Hero />
       <FocusAreas />
+      <Milestones />
       <Experience />
       <Skills />
       <Footer />

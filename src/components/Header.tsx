@@ -17,6 +17,7 @@ const Header = () => {
         <nav className="nav-links">
           <a href="#about">About</a>
           <a href="#work">Focus Areas</a>
+          <a href="#milestones">Milestones</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
