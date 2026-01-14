@@ -3,49 +3,40 @@ import profileImage from "../assets/sharon-prince.jpg";
 const Hero = () => {
   return (
     <section className="hero" id="about">
-      <div className="container" style={{ display: "flex", alignItems: "center", gap: "60px" }}>
+      <div className="container hero-grid">
 
         {/* TEXT */}
-        <div style={{ flex: 1 }}>
+        <div className="hero-text">
           <h1>
-            Hi! I'm Sharon Prince.<br />
+            Hi! I'm Sharon Prince.
+            <br />
             <span>
               Social Worker & <span className="highlight">Academic</span>
             </span>
           </h1>
 
-          <p>
-            MSW Graduate & Former Assistant Professor at Rajagiri School of Social
-            Science. Dedicated to community development, social research, and
-            empowering the next generation of changemakers.
+          <p className="hero-description">
+            Executive Director at{" "}
+            <span className="accent">Padma Foundation</span> and{" "}
+            <span className="accent">UGC NET qualified</span> in Social Work.
+            A dedicated professional committed to improving quality of life
+            among individuals and communities, with a strong focus on education,
+            empowerment, and social change. Passionate about nurturing the next
+            generation of changemakers through academic engagement, community
+            initiatives, and holistic wellbeing practices.
           </p>
 
-          <a href="mailto:sharonprinceofficial@gmail.com" className="cta-btn">
+          <a
+            href="mailto:sharonprinceofficial@gmail.com"
+            className="cta-btn"
+          >
             Get in touch
           </a>
         </div>
 
-        {/* PROFILE IMAGE */}
-        <div
-          style={{
-            width: "380px",
-            height: "400px",
-            borderRadius: "20%",
-            overflow: "hidden",
-            border: "2px solid var(--accent-color)",
-            flexShrink: 0,
-            animation: "fadeIn 1.5s ease forwards",
-          }}
-        >
-          <img
-            src={profileImage}
-            alt="Sharon Prince"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
+        {/* IMAGE */}
+        <div className="hero-image">
+          <img src={profileImage} alt="Sharon Prince" />
         </div>
 
       </div>
