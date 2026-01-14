@@ -100,7 +100,7 @@ const FocusAreas = () => {
                 src={rajagiriVideo}
                 autoPlay
                 muted
-                controls
+                loop
                 playsInline
                 preload="auto"
                 style={{
@@ -154,7 +154,7 @@ const FocusAreas = () => {
                 src={magicBusVideo}
                 autoPlay
                 muted
-                controls
+                loop
                 playsInline
                 preload="auto"
                 style={{
