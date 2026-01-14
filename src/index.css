@@ -606,3 +606,83 @@ section {
     height: 300px;
   }
 }
+/* ---------- GOLD TAG ---------- */
+.tag-gold {
+  background: var(--accent-color);
+  color: #000;
+  font-weight: 600;
+}
+
+/* ---------- SLIDESHOW CARD ---------- */
+.card-slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay hidden by default */
+.slideshow-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.92);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Show on hover */
+.card-slideshow:hover .slideshow-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ---------- IMAGES ---------- */
+.slideshow-images {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slideshow-images img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slideshow-images img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---------- DESCRIPTION ---------- */
+.slideshow-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-top: 16px;
+}
+
+/* ---------- MOBILE FRIENDLY ---------- */
+@media (max-width: 768px) {
+  .slideshow-overlay {
+    position: relative;
+    opacity: 1;
+    background: transparent;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .slideshow-images {
+    height: 200px;
+  }
+}

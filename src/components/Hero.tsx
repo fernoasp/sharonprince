@@ -22,8 +22,7 @@ const Hero = () => {
             A dedicated professional committed to improving quality of life
             among individuals and communities, with a strong focus on education,
             empowerment, and social change. Passionate about nurturing the next
-            generation of changemakers through academic engagement, community
-            initiatives, and holistic wellbeing practices.
+            generation of changemakers.
           </p>
 
           <a
