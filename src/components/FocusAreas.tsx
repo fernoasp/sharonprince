@@ -7,7 +7,7 @@ import mh3 from "../assets/mental-health/mh-3.jpg";
 
 // Videos
 import magicBusVideo from "../assets/videos/magicbus-edakochi.mp4";
-import rajagiriVideo from "../assets/videos/rajagiri-womens-day.mp4";
+import rajagiriVideo from "../assets/videos/rajagiri-womens-day.MP4";
 
 const mentalHealthImages = [mh1, mh2, mh3];
 
