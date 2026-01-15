@@ -25,10 +25,7 @@ const Hero = () => {
             generation of changemakers.
           </p>
 
-          <a
-            href="mailto:sharonprinceofficial@gmail.com"
-            className="cta-btn"
-          >
+          <a href="mailto:sharonprinceofficial@gmail.com" className="cta-btn">
             Get in touch
           </a>
         </div>
