@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
 
-import m1 from "../assets/milestones/sharon-paper.jpg";
-import m2 from "../assets/milestones/sharon-internship.jpg";
+import m2 from "../assets/milestones/sharon-paper.jpg";
 import m3 from "../assets/milestones/sharon-resource.jpg";
 import m4 from "../assets/milestones/sharon-art-therapy.jpg";
-import m5 from "../assets/milestones/sharon.jpg";
+import m1 from "../assets/milestones/sharon.jpg";
 
 const milestones = [
-  {
+    {
     image: m1,
     text:
-      "Presented a paper on 'Combating Social Isolation and Loneliness among the Elderly' at BCM College, Mary Richmond Series National Conference (May 2024).",
+      "World Mental Health Day session with DMHP, Kochi City Police & NHM — concluded with a spontaneous Zumba session.",
   },
   {
     image: m2,
     text:
-      "Internship at Doers NGO, New Shimla (May 2023) — a memorable and enriching community experience.",
+      "Presented a paper on 'Combating Social Isolation and Loneliness among the Elderly' at BCM College, Mary Richmond Series National Conference (May 2024).",
   },
   {
     image: m3,
@@ -26,11 +25,6 @@ const milestones = [
     image: m4,
     text:
       "Presented paper at International Conference of Indian Knowledge Systems, RCSS on Art Therapy and stakeholder perspectives.",
-  },
-  {
-    image: m5,
-    text:
-      "World Mental Health Day session with DMHP, Kochi City Police & NHM — concluded with a spontaneous Zumba session.",
   },
 ];
 
